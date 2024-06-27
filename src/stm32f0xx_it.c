@@ -99,29 +99,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
-    static uint16_t tick = 0;
-    static uint8_t  blue_state=0;
-
-    switch (tick++)
-    {
-        // orange blink via low level peripheral library
-        case 150:
-            tick = 0;
-            GPIOC->ODR ^= (1 << 8);
-            break;
-        case 100:
-            if(blue_state)
-                GPIOC->BRR = 0x0080;
-            else
-                GPIOC->BSRR = 0x0080;
-            blue_state ^= 1;
-            break;
-        case 50:
-            // green blink via higher level board specific library
-            STM_EVAL_LEDToggle(LED5);
-            //STM_EVAL_LEDOn(LED5);
-            break;
-    }
+    TimingDelay_Decrement();
 }
 
 

@@ -1,21 +1,23 @@
 Archive member included to satisfy reference by file (symbol)
 
 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
-                              /tmp/ccESifJW.o (STM_EVAL_LEDInit)
+                              /tmp/ccOpDmA7.o (STM_EVAL_LEDInit)
 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
                               libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o) (EXTI_Init)
 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
-                              /tmp/ccESifJW.o (GPIO_Init)
+                              libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o) (GPIO_Init)
 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
                               libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o) (NVIC_Init)
 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
-                              libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o) (RCC_AHBPeriphClockCmd)
+                              /tmp/ccOpDmA7.o (RCC_GetClocksFreq)
 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
                               libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o) (SYSCFG_EXTILineConfig)
+/home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+                              /tmp/ccOpDmA7.o (__gnu_thumb1_case_uqi)
 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
-                              /tmp/ccXZUENH.o (__aeabi_uidiv)
+                              /tmp/ccRPaIGT.o (__aeabi_uidiv)
 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_divsi3.o)
-                              /tmp/ccXZUENH.o (__aeabi_idiv)
+                              /tmp/ccRPaIGT.o (__aeabi_idiv)
 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
                               /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-atexit.o)
@@ -103,22 +105,28 @@ Discarded input sections
  .debug_str     0x00000000       0xbc /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/crt0.o
  .ARM.attributes
                 0x00000000       0x1b /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/crt0.o
- .text          0x00000000       0x14 /tmp/cc5w9cXT.o
- .data          0x00000000        0x0 /tmp/cc5w9cXT.o
- .bss           0x00000000        0x0 /tmp/cc5w9cXT.o
- .text          0x00000000        0x0 /tmp/ccXZUENH.o
- .data          0x00000000        0x0 /tmp/ccXZUENH.o
- .bss           0x00000000        0x0 /tmp/ccXZUENH.o
+ .text          0x00000000       0x14 /tmp/ccRAYSvv.o
+ .data          0x00000000        0x0 /tmp/ccRAYSvv.o
+ .bss           0x00000000        0x0 /tmp/ccRAYSvv.o
+ .text          0x00000000        0x0 /tmp/ccRPaIGT.o
+ .data          0x00000000        0x0 /tmp/ccRPaIGT.o
+ .bss           0x00000000        0x0 /tmp/ccRPaIGT.o
  .text.SystemCoreClockUpdate
-                0x00000000       0x5c /tmp/ccXZUENH.o
+                0x00000000       0x5c /tmp/ccRPaIGT.o
  .rodata.AHBPrescTable
-                0x00000000       0x10 /tmp/ccXZUENH.o
- .text          0x00000000        0x0 /tmp/ccvgMndc.o
- .data          0x00000000        0x0 /tmp/ccvgMndc.o
- .bss           0x00000000        0x0 /tmp/ccvgMndc.o
- .text          0x00000000        0x0 /tmp/ccESifJW.o
- .data          0x00000000        0x0 /tmp/ccESifJW.o
- .bss           0x00000000        0x0 /tmp/ccESifJW.o
+                0x00000000       0x10 /tmp/ccRPaIGT.o
+ .data.SystemCoreClock
+                0x00000000        0x4 /tmp/ccRPaIGT.o
+ .text          0x00000000        0x0 /tmp/ccUAFN19.o
+ .data          0x00000000        0x0 /tmp/ccUAFN19.o
+ .bss           0x00000000        0x0 /tmp/ccUAFN19.o
+ .text          0x00000000        0x0 /tmp/ccOpDmA7.o
+ .data          0x00000000        0x0 /tmp/ccOpDmA7.o
+ .bss           0x00000000        0x0 /tmp/ccOpDmA7.o
+ .text.EXTI0_IRQHandler
+                0x00000000       0x1c /tmp/ccOpDmA7.o
+ .bss.UserButtonPressed
+                0x00000000        0x4 /tmp/ccOpDmA7.o
  .bss           0x00000000        0x0 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
  .data          0x00000000        0x0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
  .bss           0x00000000        0x0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
@@ -130,6 +138,8 @@ Discarded input sections
  .bss           0x00000000        0x0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
  .data          0x00000000        0x0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
  .bss           0x00000000        0x0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .data          0x00000000        0x0 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
  .data          0x00000000        0x0 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
  .bss           0x00000000        0x0 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
  .text          0x00000000       0xa8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_divsi3.o)
@@ -556,10 +566,10 @@ Linker script and memory map
 LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
 LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtbegin.o
 LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/crt0.o
-LOAD /tmp/cc5w9cXT.o
-LOAD /tmp/ccXZUENH.o
-LOAD /tmp/ccvgMndc.o
-LOAD /tmp/ccESifJW.o
+LOAD /tmp/ccRAYSvv.o
+LOAD /tmp/ccRPaIGT.o
+LOAD /tmp/ccUAFN19.o
+LOAD /tmp/ccOpDmA7.o
 LOAD libraries/lib-board/libstm32f072b.a
 LOAD libraries/lib-mcu/libstm32f0.a
 START GROUP
@@ -574,11 +584,11 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
 .isr_vector     0x08000000       0xc4
                 0x08000000                        . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x08000000       0xc4 /tmp/cc5w9cXT.o
+ .isr_vector    0x08000000       0xc4 /tmp/ccRAYSvv.o
                 0x08000000                g_pfnVectors
                 0x080000c4                        . = ALIGN (0x4)
 
-.text           0x080000c4      0xd60
+.text           0x080000c4      0xe24
                 0x080000c4                        . = ALIGN (0x4)
  *(.text)
  .text          0x080000c4      0x118 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
@@ -664,115 +674,122 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
                 0x08000af0                SYSCFG_BreakConfig
                 0x08000b00                SYSCFG_GetFlagStatus
                 0x08000b10                SYSCFG_ClearFlag
- .text          0x08000b20       0x8c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
-                0x08000b20                __udivsi3
-                0x08000b20                __aeabi_uidiv
-                0x08000b98                __aeabi_uidivmod
- .text          0x08000bac        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
-                0x08000bac                __aeabi_ldiv0
-                0x08000bac                __aeabi_idiv0
- .text          0x08000bb0       0x48 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
-                0x08000bb0                __libc_init_array
+ .text          0x08000b20       0x14 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+                0x08000b20                __gnu_thumb1_case_uqi
+ .text          0x08000b34       0x8c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+                0x08000b34                __udivsi3
+                0x08000b34                __aeabi_uidiv
+                0x08000bac                __aeabi_uidivmod
+ .text          0x08000bc0        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+                0x08000bc0                __aeabi_ldiv0
+                0x08000bc0                __aeabi_idiv0
+ .text          0x08000bc4       0x48 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+                0x08000bc4                __libc_init_array
  *(.text.*)
  .text.Reset_Handler
-                0x08000bf8       0x50 /tmp/cc5w9cXT.o
-                0x08000bf8                Reset_Handler
+                0x08000c0c       0x50 /tmp/ccRAYSvv.o
+                0x08000c0c                Reset_Handler
  .text.Default_Handler
-                0x08000c48        0x2 /tmp/cc5w9cXT.o
-                0x08000c48                TIM1_CC_IRQHandler
-                0x08000c48                ADC1_COMP_IRQHandler
-                0x08000c48                PVD_IRQHandler
-                0x08000c48                I2C1_IRQHandler
-                0x08000c48                SPI1_IRQHandler
-                0x08000c48                TIM6_DAC_IRQHandler
-                0x08000c48                EXTI2_3_IRQHandler
-                0x08000c48                I2C2_IRQHandler
-                0x08000c48                TIM17_IRQHandler
-                0x08000c48                RTC_IRQHandler
-                0x08000c48                TIM16_IRQHandler
-                0x08000c48                TIM3_IRQHandler
-                0x08000c48                EXTI4_15_IRQHandler
-                0x08000c48                RCC_IRQHandler
-                0x08000c48                DMA1_Channel1_IRQHandler
-                0x08000c48                Default_Handler
-                0x08000c48                CEC_IRQHandler
-                0x08000c48                TIM14_IRQHandler
-                0x08000c48                DMA1_Channel4_5_IRQHandler
-                0x08000c48                TIM15_IRQHandler
-                0x08000c48                EXTI0_1_IRQHandler
-                0x08000c48                SPI2_IRQHandler
-                0x08000c48                TS_IRQHandler
-                0x08000c48                WWDG_IRQHandler
-                0x08000c48                TIM2_IRQHandler
-                0x08000c48                DMA1_Channel2_3_IRQHandler
-                0x08000c48                USART2_IRQHandler
-                0x08000c48                FLASH_IRQHandler
-                0x08000c48                USART1_IRQHandler
-                0x08000c48                TIM1_BRK_UP_TRG_COM_IRQHandler
- *fill*         0x08000c4a        0x2 
+                0x08000c5c        0x2 /tmp/ccRAYSvv.o
+                0x08000c5c                TIM1_CC_IRQHandler
+                0x08000c5c                ADC1_COMP_IRQHandler
+                0x08000c5c                PVD_IRQHandler
+                0x08000c5c                I2C1_IRQHandler
+                0x08000c5c                SPI1_IRQHandler
+                0x08000c5c                TIM6_DAC_IRQHandler
+                0x08000c5c                EXTI2_3_IRQHandler
+                0x08000c5c                I2C2_IRQHandler
+                0x08000c5c                TIM17_IRQHandler
+                0x08000c5c                RTC_IRQHandler
+                0x08000c5c                TIM16_IRQHandler
+                0x08000c5c                TIM3_IRQHandler
+                0x08000c5c                EXTI4_15_IRQHandler
+                0x08000c5c                RCC_IRQHandler
+                0x08000c5c                DMA1_Channel1_IRQHandler
+                0x08000c5c                Default_Handler
+                0x08000c5c                CEC_IRQHandler
+                0x08000c5c                TIM14_IRQHandler
+                0x08000c5c                DMA1_Channel4_5_IRQHandler
+                0x08000c5c                TIM15_IRQHandler
+                0x08000c5c                EXTI0_1_IRQHandler
+                0x08000c5c                SPI2_IRQHandler
+                0x08000c5c                TS_IRQHandler
+                0x08000c5c                WWDG_IRQHandler
+                0x08000c5c                TIM2_IRQHandler
+                0x08000c5c                DMA1_Channel2_3_IRQHandler
+                0x08000c5c                USART2_IRQHandler
+                0x08000c5c                FLASH_IRQHandler
+                0x08000c5c                USART1_IRQHandler
+                0x08000c5c                TIM1_BRK_UP_TRG_COM_IRQHandler
+ *fill*         0x08000c5e        0x2 
  .text.SystemInit
-                0x08000c4c       0xb4 /tmp/ccXZUENH.o
-                0x08000c4c                SystemInit
+                0x08000c60       0xb4 /tmp/ccRPaIGT.o
+                0x08000c60                SystemInit
  .text.NMI_Handler
-                0x08000d00        0x2 /tmp/ccvgMndc.o
-                0x08000d00                NMI_Handler
+                0x08000d14        0x2 /tmp/ccUAFN19.o
+                0x08000d14                NMI_Handler
  .text.HardFault_Handler
-                0x08000d02        0x2 /tmp/ccvgMndc.o
-                0x08000d02                HardFault_Handler
+                0x08000d16        0x2 /tmp/ccUAFN19.o
+                0x08000d16                HardFault_Handler
  .text.SVC_Handler
-                0x08000d04        0x2 /tmp/ccvgMndc.o
-                0x08000d04                SVC_Handler
+                0x08000d18        0x2 /tmp/ccUAFN19.o
+                0x08000d18                SVC_Handler
  .text.PendSV_Handler
-                0x08000d06        0x2 /tmp/ccvgMndc.o
-                0x08000d06                PendSV_Handler
+                0x08000d1a        0x2 /tmp/ccUAFN19.o
+                0x08000d1a                PendSV_Handler
  .text.SysTick_Handler
-                0x08000d08       0x50 /tmp/ccvgMndc.o
-                0x08000d08                SysTick_Handler
+                0x08000d1c        0x8 /tmp/ccUAFN19.o
+                0x08000d1c                SysTick_Handler
+ .text.Delay    0x08000d24       0x18 /tmp/ccOpDmA7.o
+                0x08000d24                Delay
+ .text.TimingDelay_Decrement
+                0x08000d3c       0x14 /tmp/ccOpDmA7.o
+                0x08000d3c                TimingDelay_Decrement
  .text.startup.main
-                0x08000d58       0x74 /tmp/ccESifJW.o
-                0x08000d58                main
+                0x08000d50      0x140 /tmp/ccOpDmA7.o
+                0x08000d50                main
  *(.rodata)
- .rodata        0x08000dcc       0x2e libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
-                0x08000dcc                GPIO_CLK
-                0x08000ddc                GPIO_PIN
-                0x08000de4                BUTTON_IRQn
-                0x08000de8                BUTTON_PIN_SOURCE
-                0x08000dec                BUTTON_PORT_SOURCE
-                0x08000df0                BUTTON_EXTI_LINE
-                0x08000df4                BUTTON_CLK
-                0x08000df8                BUTTON_PIN
- *fill*         0x08000dfa        0x2 
- .rodata        0x08000dfc       0x10 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .rodata        0x08000e90       0x2e libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+                0x08000e90                GPIO_CLK
+                0x08000ea0                GPIO_PIN
+                0x08000ea8                BUTTON_IRQn
+                0x08000eac                BUTTON_PIN_SOURCE
+                0x08000eb0                BUTTON_PORT_SOURCE
+                0x08000eb4                BUTTON_EXTI_LINE
+                0x08000eb8                BUTTON_CLK
+                0x08000ebc                BUTTON_PIN
+ *fill*         0x08000ebe        0x2 
+ .rodata        0x08000ec0       0x10 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
  *(.rodata*)
  *(.glue_7)
- .glue_7        0x08000e0c        0x0 linker stubs
+ .glue_7        0x08000ed0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000e0c        0x0 linker stubs
+ .glue_7t       0x08000ed0        0x0 linker stubs
  *(.init)
- .init          0x08000e0c        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
-                0x08000e0c                _init
- .init          0x08000e10        0x8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
+ .init          0x08000ed0        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
+                0x08000ed0                _init
+ .init          0x08000ed4        0x8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
  *(.fini)
- .fini          0x08000e18        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
-                0x08000e18                _fini
- .fini          0x08000e1c        0x8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
-                0x08000e24                        . = ALIGN (0x4)
-                0x08000e24                        _etext = .
-                0x08000e24                        _sidata = _etext
+ .fini          0x08000edc        0x4 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
+                0x08000edc                _fini
+ .fini          0x08000ee0        0x8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
+                0x08000ee8                        . = ALIGN (0x4)
+                0x08000ee8                        _etext = .
+                0x08000ee8                        _sidata = _etext
 
-.vfp11_veneer   0x08000e24        0x0
- .vfp11_veneer  0x08000e24        0x0 linker stubs
+.vfp11_veneer   0x08000ee8        0x0
+ .vfp11_veneer  0x08000ee8        0x0 linker stubs
 
-.v4_bx          0x08000e24        0x0
- .v4_bx         0x08000e24        0x0 linker stubs
+.v4_bx          0x08000ee8        0x0
+ .v4_bx         0x08000ee8        0x0 linker stubs
 
-.iplt           0x08000e24        0x0
- .iplt          0x08000e24        0x0 /tmp/cc5w9cXT.o
+.iplt           0x08000ee8        0x0
+ .iplt          0x08000ee8        0x0 /tmp/ccRAYSvv.o
 
-.rel.dyn        0x08000e24        0x0
- .rel.iplt      0x08000e24        0x0 /tmp/cc5w9cXT.o
+.rel.dyn        0x08000ee8        0x0
+ .rel.iplt      0x08000ee8        0x0 /tmp/ccRAYSvv.o
 
-.data           0x20000000       0x18 load address 0x08000e24
+.data           0x20000000       0x18 load address 0x08000ee8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
                 0x20000000                        _data = .
@@ -781,33 +798,36 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
                 0x20000000                GPIO_PORT
                 0x20000010                BUTTON_PORT
  *(.data.*)
- .data.SystemCoreClock
-                0x20000014        0x4 /tmp/ccXZUENH.o
-                0x20000014                SystemCoreClock
+ .data.currentState
+                0x20000014        0x1 /tmp/ccOpDmA7.o
+                0x20000014                currentState
  *(.RAMtext)
                 0x20000018                        . = ALIGN (0x4)
+ *fill*         0x20000015        0x3 
                 0x20000018                        _edata = .
 
-.igot.plt       0x20000018        0x0 load address 0x08000e3c
- .igot.plt      0x20000018        0x0 /tmp/cc5w9cXT.o
+.igot.plt       0x20000018        0x0 load address 0x08000f00
+ .igot.plt      0x20000018        0x0 /tmp/ccRAYSvv.o
 
-.bss            0x20000018        0x4 load address 0x08000e3c
+.bss            0x20000018       0x20 load address 0x08000f00
                 0x20000018                        . = ALIGN (0x4)
                 0x20000018                        _sbss = .
                 0x20000018                        _bss = .
  *(.bss)
  *(.bss.*)
- .bss.blue_state.0
-                0x20000018        0x1 /tmp/ccvgMndc.o
- *fill*         0x20000019        0x1 
- .bss.tick.1    0x2000001a        0x2 /tmp/ccvgMndc.o
+ .bss.TimingDelay
+                0x20000018        0x4 /tmp/ccOpDmA7.o
+                0x20000018                TimingDelay
+ .bss.RCC_Clocks
+                0x2000001c       0x1c /tmp/ccOpDmA7.o
+                0x2000001c                RCC_Clocks
  *(COMMON)
-                0x2000001c                        . = ALIGN (0x4)
-                0x2000001c                        _ebss = .
-                0x2000001c                        PROVIDE (end = _ebss)
+                0x20000038                        . = ALIGN (0x4)
+                0x20000038                        _ebss = .
+                0x20000038                        PROVIDE (end = _ebss)
                 [!provide]                        PROVIDE (_end = _ebss)
-                0x2000001c                        __exidx_start = .
-                0x2000001c                        __exidx_end = .
+                0x20000038                        __exidx_start = .
+                0x20000038                        __exidx_end = .
 
 /DISCARD/
  libc.a(*)
@@ -834,10 +854,10 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
 
 .comment        0x00000000       0x36
  *(.comment)
- .comment       0x00000000       0x36 /tmp/ccXZUENH.o
+ .comment       0x00000000       0x36 /tmp/ccRPaIGT.o
                                  0x37 (size before relaxing)
- .comment       0x00000036       0x37 /tmp/ccvgMndc.o
- .comment       0x00000036       0x37 /tmp/ccESifJW.o
+ .comment       0x00000036       0x37 /tmp/ccUAFN19.o
+ .comment       0x00000036       0x37 /tmp/ccOpDmA7.o
  .comment       0x00000036       0x37 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
  .comment       0x00000036       0x37 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
  .comment       0x00000036       0x37 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
@@ -851,13 +871,13 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
  .ARM.attributes
                 0x00000000       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crti.o
  .ARM.attributes
-                0x0000001e       0x21 /tmp/cc5w9cXT.o
+                0x0000001e       0x21 /tmp/ccRAYSvv.o
  .ARM.attributes
-                0x0000003f       0x2c /tmp/ccXZUENH.o
+                0x0000003f       0x2c /tmp/ccRPaIGT.o
  .ARM.attributes
-                0x0000006b       0x2c /tmp/ccvgMndc.o
+                0x0000006b       0x2c /tmp/ccUAFN19.o
  .ARM.attributes
-                0x00000097       0x2c /tmp/ccESifJW.o
+                0x00000097       0x2c /tmp/ccOpDmA7.o
  .ARM.attributes
                 0x000000c3       0x2c libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
  .ARM.attributes
@@ -871,13 +891,15 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
  .ARM.attributes
                 0x0000019f       0x2c libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
  .ARM.attributes
-                0x000001cb       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+                0x000001cb       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
  .ARM.attributes
-                0x000001e9       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+                0x000001e9       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x00000207       0x2c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+                0x00000207       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000233       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
+                0x00000225       0x2c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .ARM.attributes
+                0x00000251       0x1e /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
 
 .debug
  *(.debug)
@@ -891,126 +913,133 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/crtn.o
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x1d0
+.debug_aranges  0x00000000      0x208
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x28 /tmp/cc5w9cXT.o
+                0x00000000       0x28 /tmp/ccRAYSvv.o
  .debug_aranges
-                0x00000028       0x28 /tmp/ccXZUENH.o
+                0x00000028       0x28 /tmp/ccRPaIGT.o
  .debug_aranges
-                0x00000050       0x40 /tmp/ccvgMndc.o
+                0x00000050       0x40 /tmp/ccUAFN19.o
  .debug_aranges
-                0x00000090       0x20 /tmp/ccESifJW.o
+                0x00000090       0x38 /tmp/ccOpDmA7.o
  .debug_aranges
-                0x000000b0       0x20 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+                0x000000c8       0x20 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
  .debug_aranges
-                0x000000d0       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+                0x000000e8       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
  .debug_aranges
-                0x000000f0       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+                0x00000108       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
  .debug_aranges
-                0x00000110       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+                0x00000128       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
  .debug_aranges
-                0x00000130       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+                0x00000148       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
  .debug_aranges
-                0x00000150       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+                0x00000168       0x20 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
  .debug_aranges
-                0x00000170       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+                0x00000188       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
  .debug_aranges
-                0x00000190       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+                0x000001a8       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
  .debug_aranges
-                0x000001b0       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+                0x000001c8       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x000001e8       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3234
+.debug_info     0x00000000     0x3177
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000       0x30 /tmp/cc5w9cXT.o
- .debug_info    0x00000030      0x2f9 /tmp/ccXZUENH.o
- .debug_info    0x00000329      0x25f /tmp/ccvgMndc.o
- .debug_info    0x00000588      0x78f /tmp/ccESifJW.o
- .debug_info    0x00000d17      0x8b9 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
- .debug_info    0x000015d0      0x341 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
- .debug_info    0x00001911      0x730 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
- .debug_info    0x00002041      0x340 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
- .debug_info    0x00002381      0xa7c libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
- .debug_info    0x00002dfd      0x2b3 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
- .debug_info    0x000030b0       0x3d /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
- .debug_info    0x000030ed       0x3c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00003129      0x10b /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .debug_info    0x00000000       0x30 /tmp/ccRAYSvv.o
+ .debug_info    0x00000030      0x2f9 /tmp/ccRPaIGT.o
+ .debug_info    0x00000329       0xe3 /tmp/ccUAFN19.o
+ .debug_info    0x0000040c      0x81d /tmp/ccOpDmA7.o
+ .debug_info    0x00000c29      0x8b9 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+ .debug_info    0x000014e2      0x341 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+ .debug_info    0x00001823      0x730 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+ .debug_info    0x00001f53      0x340 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+ .debug_info    0x00002293      0xa7c libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .debug_info    0x00002d0f      0x2b3 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .debug_info    0x00002fc2       0x31 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+ .debug_info    0x00002ff3       0x3d /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_info    0x00003030       0x3c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000306c      0x10b /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
 
-.debug_abbrev   0x00000000     0x12cb
+.debug_abbrev   0x00000000     0x12b5
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0x24 /tmp/cc5w9cXT.o
- .debug_abbrev  0x00000024      0x178 /tmp/ccXZUENH.o
- .debug_abbrev  0x0000019c      0x15b /tmp/ccvgMndc.o
- .debug_abbrev  0x000002f7      0x240 /tmp/ccESifJW.o
- .debug_abbrev  0x00000537      0x20d libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
- .debug_abbrev  0x00000744      0x21b libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
- .debug_abbrev  0x0000095f      0x224 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
- .debug_abbrev  0x00000b83      0x170 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
- .debug_abbrev  0x00000cf3      0x2ed libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
- .debug_abbrev  0x00000fe0      0x1d4 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
- .debug_abbrev  0x000011b4       0x28 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
- .debug_abbrev  0x000011dc       0x26 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x00001202       0xc9 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .debug_abbrev  0x00000000       0x24 /tmp/ccRAYSvv.o
+ .debug_abbrev  0x00000024      0x178 /tmp/ccRPaIGT.o
+ .debug_abbrev  0x0000019c       0xb8 /tmp/ccUAFN19.o
+ .debug_abbrev  0x00000254      0x2a5 /tmp/ccOpDmA7.o
+ .debug_abbrev  0x000004f9      0x20d libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+ .debug_abbrev  0x00000706      0x21b libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+ .debug_abbrev  0x00000921      0x224 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+ .debug_abbrev  0x00000b45      0x170 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+ .debug_abbrev  0x00000cb5      0x2ed libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .debug_abbrev  0x00000fa2      0x1d4 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .debug_abbrev  0x00001176       0x28 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+ .debug_abbrev  0x0000119e       0x28 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000011c6       0x26 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000011ec       0xc9 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
 
-.debug_line     0x00000000     0x22d5
+.debug_line     0x00000000     0x228b
  *(.debug_line)
- .debug_line    0x00000000       0x7c /tmp/cc5w9cXT.o
- .debug_line    0x0000007c      0x334 /tmp/ccXZUENH.o
- .debug_line    0x000003b0      0x222 /tmp/ccvgMndc.o
- .debug_line    0x000005d2      0x2a7 /tmp/ccESifJW.o
- .debug_line    0x00000879      0x2c0 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
- .debug_line    0x00000b39      0x2cc libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
- .debug_line    0x00000e05      0x431 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
- .debug_line    0x00001236      0x21d libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
- .debug_line    0x00001453      0xa49 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
- .debug_line    0x00001e9c      0x228 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
- .debug_line    0x000020c4       0x61 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
- .debug_line    0x00002125       0x4a /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000216f      0x166 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .debug_line    0x00000000       0x7c /tmp/ccRAYSvv.o
+ .debug_line    0x0000007c      0x334 /tmp/ccRPaIGT.o
+ .debug_line    0x000003b0       0xa1 /tmp/ccUAFN19.o
+ .debug_line    0x00000451      0x38c /tmp/ccOpDmA7.o
+ .debug_line    0x000007dd      0x2c0 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+ .debug_line    0x00000a9d      0x2cc libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+ .debug_line    0x00000d69      0x431 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+ .debug_line    0x0000119a      0x21d libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+ .debug_line    0x000013b7      0xa49 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .debug_line    0x00001e00      0x228 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .debug_line    0x00002028       0x52 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x0000207a       0x61 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_line    0x000020db       0x4a /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00002125      0x166 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
 
-.debug_frame    0x00000000      0x6e8
+.debug_frame    0x00000000      0x724
  *(.debug_frame)
- .debug_frame   0x00000000       0x48 /tmp/ccXZUENH.o
- .debug_frame   0x00000048       0x68 /tmp/ccvgMndc.o
- .debug_frame   0x000000b0       0x2c /tmp/ccESifJW.o
- .debug_frame   0x000000dc       0x94 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
- .debug_frame   0x00000170       0x9c libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
- .debug_frame   0x0000020c      0x110 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
- .debug_frame   0x0000031c       0x50 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
- .debug_frame   0x0000036c      0x298 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
- .debug_frame   0x00000604       0x98 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
- .debug_frame   0x0000069c       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
- .debug_frame   0x000006bc       0x2c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .debug_frame   0x00000000       0x48 /tmp/ccRPaIGT.o
+ .debug_frame   0x00000048       0x68 /tmp/ccUAFN19.o
+ .debug_frame   0x000000b0       0x68 /tmp/ccOpDmA7.o
+ .debug_frame   0x00000118       0x94 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+ .debug_frame   0x000001ac       0x9c libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+ .debug_frame   0x00000248      0x110 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+ .debug_frame   0x00000358       0x50 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+ .debug_frame   0x000003a8      0x298 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .debug_frame   0x00000640       0x98 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .debug_frame   0x000006d8       0x20 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_frame   0x000006f8       0x2c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
 
-.debug_str      0x00000000     0x16b6
+.debug_str      0x00000000     0x1712
  *(.debug_str)
- .debug_str     0x00000000       0x6f /tmp/cc5w9cXT.o
- .debug_str     0x0000006f      0x202 /tmp/ccXZUENH.o
+ .debug_str     0x00000000       0x6f /tmp/ccRAYSvv.o
+ .debug_str     0x0000006f      0x202 /tmp/ccRPaIGT.o
                                 0x294 (size before relaxing)
- .debug_str     0x00000271      0x104 /tmp/ccvgMndc.o
-                                0x27c (size before relaxing)
- .debug_str     0x00000375      0x3cb /tmp/ccESifJW.o
-                                0x635 (size before relaxing)
- .debug_str     0x00000740      0x3d0 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
+ .debug_str     0x00000271       0x72 /tmp/ccUAFN19.o
+                                0x1bb (size before relaxing)
+ .debug_str     0x000002e3      0x3e4 /tmp/ccOpDmA7.o
+                                0x59a (size before relaxing)
+ .debug_str     0x000006c7      0x55d libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
                                 0x81d (size before relaxing)
- .debug_str     0x00000b10      0x13f libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
+ .debug_str     0x00000c24      0x117 libraries/lib-mcu/libstm32f0.a(stm32f0xx_exti.o)
                                 0x34a (size before relaxing)
- .debug_str     0x00000c4f      0x169 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
+ .debug_str     0x00000d3b      0x169 libraries/lib-mcu/libstm32f0.a(stm32f0xx_gpio.o)
                                 0x4ab (size before relaxing)
- .debug_str     0x00000db8       0xa0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
+ .debug_str     0x00000ea4       0xa0 libraries/lib-mcu/libstm32f0.a(stm32f0xx_misc.o)
                                 0x2fa (size before relaxing)
- .debug_str     0x00000e58      0x47a libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+ .debug_str     0x00000f44      0x3d4 libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
                                 0x72c (size before relaxing)
- .debug_str     0x000012d2      0x168 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
+ .debug_str     0x00001318      0x168 libraries/lib-mcu/libstm32f0.a(stm32f0xx_syscfg.o)
                                 0x31f (size before relaxing)
- .debug_str     0x0000143a       0xd3 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_str     0x00001480       0xce /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+                                 0xda (size before relaxing)
+ .debug_str     0x0000154e       0x1b /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
                                  0xdf (size before relaxing)
- .debug_str     0x0000150d       0x1c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x00001569       0x1c /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
                                  0xe0 (size before relaxing)
- .debug_str     0x00001529      0x18d /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
+ .debug_str     0x00001585      0x18d /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/../../../../arm-cortexm0-eabi/lib/libg.a(libc_a-init.o)
                                 0x216 (size before relaxing)
 
 .debug_loc
@@ -1039,31 +1068,33 @@ LOAD /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc
 .debug_line_str
                 0x00000000      0x10d
  .debug_line_str
-                0x00000000       0x55 /tmp/cc5w9cXT.o
+                0x00000000       0x55 /tmp/ccRAYSvv.o
  .debug_line_str
-                0x00000055       0xb8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
+                0x00000055       0xb8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line_str
+                0x0000010d       0xb8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_udivsi3.o)
  .debug_line_str
                 0x0000010d       0xb8 /home/mikhail/bin/arm-cortexm0-eabi/lib/gcc/arm-cortexm0-eabi/13.2.0/libgcc.a(_dvmd_tls.o)
 
 .debug_rnglists
-                0x00000000       0xb4
+                0x00000000       0xca
  .debug_rnglists
-                0x00000000       0x19 /tmp/cc5w9cXT.o
+                0x00000000       0x19 /tmp/ccRAYSvv.o
  .debug_rnglists
-                0x00000019       0x1a /tmp/ccXZUENH.o
+                0x00000019       0x1a /tmp/ccRPaIGT.o
  .debug_rnglists
-                0x00000033       0x2b /tmp/ccvgMndc.o
+                0x00000033       0x2b /tmp/ccUAFN19.o
  .debug_rnglists
-                0x0000005e       0x2b /tmp/ccESifJW.o
+                0x0000005e       0x41 /tmp/ccOpDmA7.o
  .debug_rnglists
-                0x00000089       0x2b libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
+                0x0000009f       0x2b libraries/lib-mcu/libstm32f0.a(stm32f0xx_rcc.o)
 
 .debug_loclists
                 0x00000000      0xc3a
  .debug_loclists
-                0x00000000       0xcb /tmp/ccXZUENH.o
+                0x00000000       0xcb /tmp/ccRPaIGT.o
  .debug_loclists
-                0x000000cb       0x3b /tmp/ccESifJW.o
+                0x000000cb       0x3b /tmp/ccOpDmA7.o
  .debug_loclists
                 0x00000106       0xd3 libraries/lib-board/libstm32f072b.a(stm32f072b_discovery.o)
  .debug_loclists

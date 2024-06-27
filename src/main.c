@@ -1,33 +1,124 @@
 #include "stm32f0xx_conf.h"
 #include "stm32f072b_discovery.h"
 
+RCC_ClocksTypeDef RCC_Clocks;
+__IO uint32_t TimingDelay = 0;
+__IO uint32_t UserButtonPressed = 0x00;
+uint8_t currentState = 1;
+
+void Delay(__IO uint32_t nTime)
+{ 
+  TimingDelay = nTime;
+
+  while(TimingDelay != 0);
+}
+
+void TimingDelay_Decrement(void)
+{
+  if (TimingDelay != 0x00)
+  { 
+    TimingDelay--;
+  }
+}
+
+void EXTI0_IRQHandler(void)
+{
+  if (EXTI_GetITStatus(USER_BUTTON_EXTI_LINE) != RESET)
+  {
+    /* Set the UserButtonPressed variable */
+    UserButtonPressed = 0x01;
+
+    /* Clear the EXTI line pending bit */
+    EXTI_ClearITPendingBit(USER_BUTTON_EXTI_LINE);
+  }
+}
+
+
 int main(void)
 {
-    // low level access to GPIO
-    // we init the pin by direct manipulation of registers
-    RCC->AHBENR |= RCC_AHBENR_GPIOCEN; 	// enable the clock to GPIOC
-                                        // (RM0091 lists this as IOPCEN, not GPIOCEN)
-    GPIOC->MODER = (1 << 16);
+    RCC_GetClocksFreq(&RCC_Clocks);
+    SysTick_Config(RCC_Clocks.HCLK_Frequency / 100);
 
-    // middle level access to GPIO (via the peripheral library)
-    GPIO_InitTypeDef  GPIO_InitStructure;
-
-    //RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);  // Enable the GPIO LEDs clock
-
-    // by [DocID025474 Rev 1] the red LED is hardwired to PC7
-    // by default PC7 is the 7th signal of GPIO bank C
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIOC, &GPIO_InitStructure);
 
     // high level access to GPIO (via the board library)
+    STM_EVAL_LEDInit(LED3);
+    STM_EVAL_LEDInit(LED4);
     STM_EVAL_LEDInit(LED5);
+    STM_EVAL_LEDInit(LED6);
 
-    SysTick_Config(SystemCoreClock/100);
 
-    while(1);
+    currentState = 0;
+    while(1)
+    {switch (currentState)
+        {
+         case 0:
+            STM_EVAL_LEDOn(LED4);
+            STM_EVAL_LEDOn(LED6);
+            Delay(100);
+            STM_EVAL_LEDOff(LED4);
+            STM_EVAL_LEDOff(LED6);
+            Delay(25);
+            break;
+         case 1:
+            STM_EVAL_LEDOn(LED3);
+            STM_EVAL_LEDOn(LED5);
+            Delay(100);
+            STM_EVAL_LEDOff(LED3);
+            STM_EVAL_LEDOff(LED5);
+            Delay(25);
+            break;
+         case 2:
+            STM_EVAL_LEDOn(LED3);
+            STM_EVAL_LEDOn(LED4);
+            Delay(100);
+            STM_EVAL_LEDOff(LED3);
+            STM_EVAL_LEDOff(LED4);
+            Delay(25);
+            break;
+         case 3:
+            STM_EVAL_LEDOn(LED5);
+            STM_EVAL_LEDOn(LED6);
+            Delay(100);
+            STM_EVAL_LEDOff(LED5);
+            STM_EVAL_LEDOff(LED6);
+            Delay(25);
+            break;
+         case 4:
+            STM_EVAL_LEDOn(LED3);
+            Delay(25);
+            STM_EVAL_LEDOff(LED3);
+            Delay(25);
+            break;
+         case 5:
+            STM_EVAL_LEDOn(LED4);
+            Delay(25);
+            STM_EVAL_LEDOff(LED4);
+            Delay(25);
+            break; 
+         case 6:
+            STM_EVAL_LEDOn(LED5);
+            Delay(25);
+            STM_EVAL_LEDOff(LED5);
+            Delay(25);
+            break;  
+         case 7:
+            STM_EVAL_LEDOn(LED6);
+            Delay(25);
+            STM_EVAL_LEDOff(LED6);
+            Delay(25);
+            break;             
+
+        }
+
+      /* Change the state */
+    if (currentState<4)
+      {currentState = (currentState + 1) % 8;  // 8 states 
+      Delay(100);
+      }
+    else
+      {currentState = (currentState + 1) % 8;  // 8 states 
+      Delay(50);  
+      }  
+    }
 }
 
